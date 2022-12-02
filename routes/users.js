@@ -1,9 +1,9 @@
-const res = require("express/lib/response");
+import { Router } from "express";
 
-const router = require("express").Router();
+const router = Router();
 
 router.get("/", (req,res)=>{
     res.send("hey its user route")
 })
 
-module.exports = router;
+export default router;
